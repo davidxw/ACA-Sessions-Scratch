@@ -23,7 +23,7 @@ function Write-Usage-and-Exit {
     Exit
 }
 
-function Upload-File-To-Session {
+function Invoke-FileUpload {
     param (
         [string]$fileName,
         [string]$sessionId,
@@ -60,7 +60,7 @@ function Upload-File-To-Session {
     return $response
 }
 
-function Run-Code-In-Session {
+function Invoke-Code-In-Session {
 
     param (
         [string]$code,
@@ -128,7 +128,7 @@ if ($newSession -and $weatherApiKey) {
   
     $fileName = 'cached_weather.py'
 
-    $response = Upload-File-To-Session -fileName $fileName -sessionId $sessionId -accessToken $accessToken -endPoint $endPoint
+    $response = Invoke-FileUpload -fileName $fileName -sessionId $sessionId -accessToken $accessToken -endPoint $endPoint
 }
 
 ### Run script
@@ -149,7 +149,7 @@ get_local_weather('$weatherApiKey')
 "@
 }
 
-$response = Run-Code-In-Session -code $code -sessionId $sessionId -accessToken $accessToken -endPoint $endPoint
+$response = Invoke-Code-In-Session -code $code -sessionId $sessionId -accessToken $accessToken -endPoint $endPoint
 
 # Output the response
 Write-Host-With-TimeStamp -message "status: $($response.properties.status)" 
