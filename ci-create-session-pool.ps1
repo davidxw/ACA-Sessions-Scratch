@@ -1,5 +1,7 @@
 # https://learn.microsoft.com/en-us/azure/container-apps/sessions-code-interpreter
 
+# Create a code interpreter session pool
+
 $rg = 'aca-session-scratch'
 $location = 'westus2'
 $sessionPoolName = 'session-pool-1'
