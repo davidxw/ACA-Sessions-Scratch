@@ -1,9 +1,9 @@
 Code container 
 ./ci-create-and-run-session.ps1 -endPoint  https://westus2.dynamicsessions.io/subscriptions/85daeb44-39bd-4881-9ec3-e7a36b1b648a/resourceGroups/aca-session-scratch/sessionPools/session-pool-1
 
-./ci-create-and-run-session.ps1 -endPoint  https://westus2.dynamicsessions.io/subscriptions/85daeb44-39bd-4881-9ec3-e7a36b1b648a/resourceGroups/aca-session-scratch/sessionPools/session-pool-1 -weatherApiKey df516b68c7ef4224b5951648240507
+./ci-create-and-run-session.ps1 -endPoint  https://westus2.dynamicsessions.io/subscriptions/85daeb44-39bd-4881-9ec3-e7a36b1b648a/resourceGroups/aca-session-scratch/sessionPools/session-pool-1 -sessionId david123
 
-Open the file and count the objects in it. Tell me what properties the object has
+./ci-create-and-run-session.ps1 -endPoint  https://westus2.dynamicsessions.io/subscriptions/85daeb44-39bd-4881-9ec3-e7a36b1b648a/resourceGroups/aca-session-scratch/sessionPools/session-pool-1 -weatherApiKey df516b68c7ef4224b5951648240507
 
 Custom container
 .\cc-create-and-run-session.ps1 -endPoint https://session-pool-4.proudsky-20327427.westus2.azurecontainerapps.io

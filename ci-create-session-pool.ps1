@@ -2,7 +2,7 @@
 
 # Create a code interpreter session pool
 
-$rg = 'aca-session-scratch'
+$rg = 'aca-session-demo'
 $location = 'westus2'
 $sessionPoolName = 'session-pool-1'
 

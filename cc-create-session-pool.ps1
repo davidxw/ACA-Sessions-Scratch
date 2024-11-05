@@ -2,9 +2,9 @@
 
 # Create a custom container session pool
 
-$rg = 'aca-session-scratch2'
+$rg = 'aca-session-demo'
 $location = 'westus2'
-$sessionPoolName = 'session-pool-4'
+$sessionPoolName = 'session-pool-custom'
 
 $acaEnvironmnentName = 'aca-session-environment'
 $imageName = 'docker.io/davidxw/webtest:latest'
